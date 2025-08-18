@@ -22,7 +22,7 @@ const Education = () => {
       institution: "Makhanlal Chaturvedi National University, Bhopal",
       period: "Jul 2022 – Jun 2025",
       description: "CGPA: 7.55 - Strong foundation in computer science fundamentals and programming.",
-      status: "completed",
+      status: "Completed",
     },
   ];
 
