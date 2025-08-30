@@ -5,6 +5,15 @@ import { ExternalLink, Award, Calendar } from "lucide-react";
 const Certifications = () => {
   const certifications = [
     {
+      title: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
+      issuer: "Oracle University",
+      date: "Aug 2025",
+      description: "Professional certification validating expertise in building and managing ...",
+      viewUrl: "https://www.linkedin.com/posts/ayushnarware_oraclecertified-oraclecloud-datascience-activity-7363447914049765376-OMak?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEIeTSMBv-k_io7Grb6gyHveu-YMbotj-zI",
+      verifyUrl: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=E821595BA9F67A69CB085D2CA696D7D304BC6E987CE70837BDCA9239A93AD2E6",
+      featured: true,
+    },
+    {
       title: "NodeJs + ExpressJs + MongoDB",
       issuer: "Knowledge Gate",
       date: "Aug 2025",
@@ -196,8 +205,8 @@ const Certifications = () => {
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6">
           {[
             { label: "Total Certifications", count: certifications.length+"+" },
-            { label: "Platforms", count: "6+" },
-            { label: "Learning Hours", count: "610+" },
+            { label: "Platforms", count: "7+" },
+            { label: "Learning Hours", count: "645+" },
           ].map((stat) => (
             <Card key={stat.label} className="text-center bg-card border-border">
               <CardContent className="p-6">

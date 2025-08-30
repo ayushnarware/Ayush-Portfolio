@@ -93,9 +93,9 @@ const Education = () => {
                               Currently Enrolled
                             </div>
                           )}
-                          {item.status === "completed" && (
+                          {item.status === "Completed" && (
                             <div className="mt-3 inline-flex items-center px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
-                             completed
+                             Completed
                             </div>
                           )}
                         </div>
