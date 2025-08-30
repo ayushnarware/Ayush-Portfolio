@@ -5,7 +5,7 @@ const Education = () => {
   const educationItems = [
     {
       title: "Master of Computer Applications (MCA)",
-      institution: "Bansal Institute of Science & Technology, Bhopal",
+      institution: "Technocrats Institute of Technology, Bhopal",
       period: "Jul 2025 – Present",
       description: "Advanced studies in computer applications with focus on software development and emerging technologies.",
       status: "current",
@@ -93,9 +93,9 @@ const Education = () => {
                               Currently Enrolled
                             </div>
                           )}
-                          {item.status === "completed" && (
+                          {item.status === "Completed" && (
                             <div className="mt-3 inline-flex items-center px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
-                             completed
+                             Completed
                             </div>
                           )}
                         </div>
