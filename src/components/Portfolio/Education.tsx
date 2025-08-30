@@ -5,7 +5,7 @@ const Education = () => {
   const educationItems = [
     {
       title: "Master of Computer Applications (MCA)",
-      institution: "Technocrats Institute of Technology, Bhopal",
+      institution: "Technocrats Institute of Technology, Bhopal ",
       period: "Jul 2025 – Present",
       description: "Advanced studies in computer applications with focus on software development and emerging technologies.",
       status: "current",
