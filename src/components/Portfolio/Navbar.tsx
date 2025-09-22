@@ -5,12 +5,12 @@ import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const [activeSection, setActiveSection] = useState("hero");
 
   useEffect(() => {
     // Check for saved theme in localStorage
-    const savedTheme = localStorage.getItem("theme") || "dark";
+    const savedTheme = localStorage.getItem("theme") || "light";
     setTheme(savedTheme);
     if (savedTheme === "light") {
       document.documentElement.classList.add("light");
@@ -18,7 +18,7 @@ const Navbar = () => {
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
+    const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
     

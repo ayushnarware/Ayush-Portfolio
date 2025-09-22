@@ -3,15 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage" : "https://ayushnarware.github.io/Ayush-Portfolio/",
-    "scripts": {
+  "homepage": "https://ayushnarware.github.io/Ayush-Portfolio",
+  "description": "A portfolio website built with React, Vite, TypeScript, and Shadcn UI components.",
+  "author": "Ayush Narware",
+  "scripts": {
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -75,6 +77,7 @@
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
+    "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "lovable-tagger": "^1.1.9",
     "postcss": "^8.5.6",

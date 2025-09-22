@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import foodOrderingProject from "@/assets/food-ordering-project.png";
 import livepixeProject from "@/assets/livepixe-project.png";
+import FrontEndTechnologies from "@/assets/FrontEndDevelopment.png"
 
 const Projects = () => {
   const projects = [
@@ -21,6 +22,14 @@ const Projects = () => {
       liveUrl: "https://ayushnarware.github.io/LivePixe/",
       sourceUrl: "https://github.com/ayushnarware/LivePixe",
       technologies: ["JavaScript", "API Integration", "Responsive Design", "Photo Management"],
+    },
+     {
+      title: "My Front-End Development Journey",
+      description: "Explore my day-by-day learning path in Front-End development, with mini projects and hands-on practice added every weekday.",
+      image: FrontEndTechnologies,
+      liveUrl: "https://ayushnarware.github.io/Front-End-Technologies/",
+      sourceUrl: "https://github.com/ayushnarware/Front-End-Technologies",
+      technologies: ["HTML", "CSS"],
     },
   ];
 
