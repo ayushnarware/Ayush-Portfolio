@@ -1,34 +1,37 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Calendar, MapPin } from "lucide-react";
+import { Briefcase, Calendar, MapPin } from "lucide-react";
 
-const Education = () => {
-  const educationItems = [
-    {
-      title: "Master of Computer Applications (MCA)",
-      institution: "Technocrats Institute of Technology, Bhopal",
-      period: "Jul 2025 – Present",
-      description: "Advanced studies in computer applications with focus on software development and emerging technologies.",
-      status: "current",
-    },
+const Experience = () => {
+  const experienceItems = [
     
+   {
+  role: "Full Stack Developer Intern & Trainee",
+  company: "KodNest Technologies Private Limited",
+  location: "Bengaluru, India",
+  period: "Jul 2025 – Present",
+  status: "current",
+  description: "Currently undergoing full-stack development training at KodNest while working on real-world projects using Java, MySQL, React, and Spring Boot. Involved in API development, database optimization, testing, and collaborative development.",
+},
+
     {
-      title: "Bachelor of Computer Applications (BCA)",
-      institution: "Makhanlal Chaturvedi National University, Bhopal",
-      period: "Jul 2022 – Jun 2025",
-      description: "CGPA: 7.55 - Strong foundation in computer science fundamentals and programming.",
-      status: "Completed",
+      role: "Freelance Web Developer",
+      company: "Self-Employed",
+      location: "Remote",
+      period: "Feb 2025 – Jun 2025",
+      description: "Developed custom websites for local businesses. Implemented responsive designs and integrated payment gateways for e-commerce clients.",
+      status: "completed",
     },
   ];
 
   return (
-    <section id="education" className="py-20 bg-gradient-to-b from-background to-card/50">
+    <section id="experience" className="py-20 bg-gradient-to-b from-background to-card/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Education 
+            Professional Experience
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Continuous learning journey in technology and software development
+            My professional journey and industry exposure
           </p>
         </div>
 
@@ -38,9 +41,9 @@ const Education = () => {
           <div className="absolute left-4 md:left-1/2 transform md:-translate-x-px top-0 bottom-0 w-0.5 bg-border"></div>
 
           <div className="space-y-12">
-            {educationItems.map((item, index) => (
+            {experienceItems.map((item, index) => (
               <div
-                key={item.title}
+                key={index}
                 className={`relative flex items-center ${
                   index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                 } flex-col md:space-x-0`}
@@ -60,17 +63,17 @@ const Education = () => {
                     <CardContent className="p-6">
                       <div className="flex items-start gap-3 mb-4">
                         <div className="p-2 bg-primary/10 rounded-lg">
-                          <GraduationCap className="h-5 w-5 text-primary" />
+                          <Briefcase className="h-5 w-5 text-primary" />
                         </div>
                         <div className="flex-1">
                           <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                            {item.title}
+                            {item.role}
                           </h3>
                           
                           <div className="space-y-2 mb-4">
                             <div className="flex items-center text-muted-foreground text-sm">
                               <MapPin className="h-4 w-4 mr-2" />
-                              {item.institution}
+                              {item.company} • {item.location}
                             </div>
                             <div className="flex items-center text-muted-foreground text-sm">
                               <Calendar className="h-4 w-4 mr-2" />
@@ -84,12 +87,7 @@ const Education = () => {
 
                           {item.status === "current" && (
                             <div className="mt-3 inline-flex items-center px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
-                              Currently Enrolled
-                            </div>
-                          )}
-                          {item.status === "Completed" && (
-                            <div className="mt-3 inline-flex items-center px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
-                             Completed
+                              Currently Working
                             </div>
                           )}
                         </div>
@@ -109,4 +107,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Experience;

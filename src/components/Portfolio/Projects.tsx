@@ -16,12 +16,12 @@ const Projects = () => {
       technologies: ["React", "Redux", "Spring Boot", "MySQL", "REST API"],
     },
     {
-      title: "LivePixel - Interactive Photo Album",
+      title: "LivePixel - Interactive Photo and Video Album",
       description: "An API-based platform for users to search, describe, and download photos, with a fully responsive UI optimized for all devices.",
       image: livepixeProject,
-      liveUrl: "https://ayushnarware.github.io/LivePixe/",
-      sourceUrl: "https://github.com/ayushnarware/LivePixe",
-      technologies: ["JavaScript", "API Integration", "Responsive Design", "Photo Management"],
+      liveUrl: "https://ayushnarware.github.io/LivePixe2.0/",
+      sourceUrl: "https://github.com/ayushnarware/LivePixe2.0",
+      technologies: ["JavaScript", "API Integration", "Responsive Design", "Photo Management", "Video Management"],
     },
      {
       title: "My Front-End Development Journey",
